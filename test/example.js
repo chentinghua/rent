@@ -28,13 +28,13 @@ describe('Learning by the example', function(){
             .contains({message: 'hello world'})
         ;
       })
-      .if(example = 'bad value')
+      .if(example = 'bad value 1')
         .error(function(){
           example.badMethod();
         })
     ;
   });
   it('other test case', function(){
-    // other tests ...sssssss
+    // other tests ...
   });
 });
