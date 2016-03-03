@@ -28,7 +28,7 @@ describe('Learning by the example', function(){
             .contains({message: 'hello world'})
         ;
       })
-      .if(example = 'bad value 1')
+      .if(example = 'bad value')
         .error(function(){
           example.badMethod();
         })
