@@ -35,6 +35,6 @@ describe('Learning by the example', function(){
     ;
   });
   it('other test case', function(){
-    // other tests ...
+    // other tests ...sssssss
   });
 });
