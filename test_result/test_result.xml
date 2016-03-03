@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="0.017" tests="2" failures="0">
+  <testsuite name="Root Suite" timestamp="2016-03-03T08:54:34" tests="0" failures="0" time="0">
+  </testsuite>
+  <testsuite name="Learning by the example" timestamp="2016-03-03T08:54:34" tests="2" failures="0" time="0.017">
+    <testcase name="Root Suite Learning by the example example variable" time="0.016" classname="example variable">
+    </testcase>
+    <testcase name="Root Suite Learning by the example other test case" time="0.001" classname="other test case">
+    </testcase>
+  </testsuite>
+</testsuites>
