@@ -1,6 +1,4 @@
 var request = require('request');
-
-var shop_file_api = require('./shop_file_api');
 var expect = require('chai').expect;
 
 describe('API Unit Test : shop profile ', function() {
