@@ -25,7 +25,7 @@ describe('Learning by the example', function(){
             .hasValue('developper')
             .hasProperty('name')
             .hasProperty('from', 'France')
-            .contains({message: 'hello world2222'})
+            .contains({message: 'hello world'})
         ;
       })
       .if(example = 'bad value')
@@ -48,4 +48,32 @@ describe('Array', function(){
       assert.equal(-1, [1,2,3].indexOf(0));
     })
   })
-})
+});
+
+ 
+
+var request = require('request');
+var url = 'http://10.127.4.69:3000/profiles?columns[]=spf_id_pk&columns[]=spf_shop_url';
+var api_response_rows_count = 0 ;
+
+request(url, function (error, response , body) {
+		 
+  if (!error &&  response.statusCode == 200) {
+    var response = JSON.parse(body);
+    api_response_rows_count = response.data.length;
+    console.log("Got a response: ", response.data.length);
+    
+    describe('Array', function(){
+  	  describe('#indexOf()', function(){
+  	    it('should return -1 when the value is not present', function(){
+  	      assert.equal(-1, response.indexOf(5)); 
+  	    })
+  	  })
+  });    
+  } else {
+    console.log("Got an error: ", error, ", status code: ", response);
+  }
+});
+
+
+

@@ -9,14 +9,15 @@
     "express": "~4.13.1",
     "jade": "~1.11.0",
     "morgan": "~1.6.1",
+    "request": "^2.69.0",
     "serve-favicon": "~2.3.0"
   },
   "devDependencies": {
-	"chai": "*",
+    "chai": "*",
     "mocha": "^2.4.5",
     "mocha-junit-reporter": "^1.9.1"
   },
-    "scripts": {
-	    "test": "mocha test/example.js --reporter mocha-junit-reporter --reporter-options mochaFile=test_result/test_result.xml"
+  "scripts": {
+    "test": "mocha test/shop_file_api.test.js"
   }
 }
