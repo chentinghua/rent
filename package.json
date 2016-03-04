@@ -2,9 +2,6 @@
   "name": "rent",
   "version": "0.0.0",
   "private": true,
-  "scripts": {
-    "test": "mocha test/example.js -R spec"
-  },
   "dependencies": {
     "body-parser": "~1.13.2",
     "cookie-parser": "~1.3.5",
@@ -15,10 +12,11 @@
     "serve-favicon": "~2.3.0"
   },
   "devDependencies": {
+	"chai": "*",
     "mocha": "^2.4.5",
     "mocha-junit-reporter": "^1.9.1"
-  },"scripts": {
-      "test": "mocha test/example.js --reporter mocha-junit-reporter --reporter-options mochaFile=test_result/test_result.xml"
+  },
+    "scripts": {
+	    "test": "mocha test/example.js --reporter mocha-junit-reporter --reporter-options mochaFile=test_result/test_result.xml"
   }
-  
 }

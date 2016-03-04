@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="Mocha Tests" time="0.017" tests="2" failures="0">
-  <testsuite name="Root Suite" timestamp="2016-03-03T08:54:34" tests="0" failures="0" time="0">
+<testsuites name="Mocha Tests" time="0.017" tests="3" failures="0">
+  <testsuite name="Root Suite" timestamp="2016-03-03T10:00:54" tests="0" failures="0" time="0">
   </testsuite>
-  <testsuite name="Learning by the example" timestamp="2016-03-03T08:54:34" tests="2" failures="0" time="0.017">
-    <testcase name="Root Suite Learning by the example example variable" time="0.016" classname="example variable">
+  <testsuite name="Learning by the example" timestamp="2016-03-03T10:00:54" tests="2" failures="0" time="0.017">
+    <testcase name="Root Suite Learning by the example example variable" time="0.017" classname="example variable">
     </testcase>
-    <testcase name="Root Suite Learning by the example other test case" time="0.001" classname="other test case">
+    <testcase name="Root Suite Learning by the example other test case" time="0" classname="other test case">
+    </testcase>
+  </testsuite>
+  <testsuite name="Array" timestamp="2016-03-03T10:00:54" tests="0" failures="0" time="0">
+  </testsuite>
+  <testsuite name="#indexOf()" timestamp="2016-03-03T10:00:54" tests="1" failures="0" time="0">
+    <testcase name="Root Suite Array #indexOf() should return -1 when the value is not present" time="0" classname="should return -1 when the value is not present">
     </testcase>
   </testsuite>
 </testsuites>
