@@ -21,7 +21,7 @@ describe('API Unit Test : shop profile ', function() {
 		 
 	     
 	     it('API response count should be equals 100', function(done) {
-	    	 expect(len).to.be.equal(101);
+	    	 expect(len).to.be.equal(100);
 		     done();
 	     });	
 		   
