@@ -25,7 +25,7 @@ describe('Learning by the example', function(){
             .hasValue('developper')
             .hasProperty('name')
             .hasProperty('from', 'France')
-            .contains({message: 'hello world'})
+            .contains({message: 'hello world2222'})
         ;
       })
       .if(example = 'bad value')
