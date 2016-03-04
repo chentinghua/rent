@@ -1,5 +1,4 @@
 var request = require('request');
-var expect = require('chai').expect;
 
 describe('API Unit Test : shop profile ', function() {
 	
@@ -8,24 +7,18 @@ describe('API Unit Test : shop profile ', function() {
 		
 	    before(function(done){
 	    	request(url, function (error, response , body) {
-				
 				 if (!error &&  response.statusCode == 200) {
 					var response = JSON.parse(body);
-					len = response.data.length;
-					//len = 100;
-					console.warn("shop profile API response length="+len);
-				  } else {
-					  console.log("Got an error: ", error, ", status code: ", response);
-				  }
+					len = response.data.length; 
+				  } 
 				 
 				 done();
-				 
 			});
 	    });
 		 
 	     
-	     it('API response count  should be equals 100', function(done) {
-	    	 expect(len).to.be.equal(100);
+	     it('API response count should be equals 100', function(done) {
+	    	 expect(len).to.be.equal(101);
 		     done();
 	     });	
 		   
