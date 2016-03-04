@@ -18,6 +18,6 @@
     "mocha-junit-reporter": "^1.9.1"
   },
   "scripts": {
-    "test": "mocha test/shop_file_api.test.js"
+    "test": "mocha test/shop_file_api.test.js --reporter mocha-junit-reporter --reporter-options mochaFile=test_result/test_result.xml"
   }
 }
