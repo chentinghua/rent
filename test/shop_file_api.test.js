@@ -3,7 +3,7 @@ var expect = require('chai').expect;
 
 describe('API Unit Test : shop profile ', function() {
 	
-		var url = 'http://10.127.4.69:3000/profiles?columns[]=spf_id_pk&columns[]=spf_shop_url';
+		var url = 'http://10.127.4.69:3000/shop/profiles';
 		var len = 0;
 		
 	    before(function(done){
@@ -21,8 +21,8 @@ describe('API Unit Test : shop profile ', function() {
 	    });
 		 
 	     
-	     it('API response count should be equals 100', function(done) {
-	    	 expect(len).to.be.equal(100);
+	     it('API response count should be above 1', function(done) {
+	    	 expect(len).to.be.above(1);
 		     done();
 	     });	
 		   
