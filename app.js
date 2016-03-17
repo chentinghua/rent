@@ -51,7 +51,7 @@ if (app.get('env') === 'development') {
 
 // production error handler
 // no stacktraces leaked to user
-app.use(function(err, req, res, next) {
+app.use(function(err, req, res, ne xt) {
   res.status(err.status || 500);
   res.render('error', {
     message: err.message,
@@ -62,6 +62,9 @@ app.use(function(err, req, res, next) {
 
 //module.exports = app;
 
+
+//
 app.listen(80, function () {
     console.log('ready on port 80');
 })
+ 
